@@ -1,7 +1,5 @@
-from mailcap import findmatch
 import re
 import json
-from collections import Counter
 file = open('websiteData.txt', 'r', encoding='utf-8')
 f = file.read()
 h = re.findall('[A-Za-z0-9\.\+_-]+@[A-Za-z0-9\._-]+\.[a-zA-Z]*', f)
